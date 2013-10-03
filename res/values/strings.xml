@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, Gesture_kidsActivity!</string>
+    <string name="app_name">Gesture_kids</string>
+
+     <string-array name="kids_array">
+           
+     <item>Learn Alphabet</item>
+     <item>Poems</item>
+  	
+    </string-array>
+    
+      
+    
+    <string-array name="poems_array">
+        <item>Humpty Dumpty</item>
+       <item>Johny Johny yes Papa</item>
+       <item>Rock a Bye Baby</item>
+        <item>Twinkle Twinkle Little Star</item>
+        <item>Wee Willie Winkie</item>
+      
+          
+    </string-array>
+    
+    
+    
+</resources>

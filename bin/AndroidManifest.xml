@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="project.gesture_kids"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="7" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="SmartKids" >
+        <activity
+            android:name=".GestureMonitorActivity2"
+            android:label="SmartKids" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+         <activity 
+            android:name=".List"
+            android:label="SmartKids" />
+         
+          <activity 
+            android:name=".Poem"
+            android:label="SmartKids" />
+          
+          <activity 
+            android:name=".Humpty"
+            android:label="SmartKids" />
+          
+           <activity 
+            android:name=".Johny"
+            android:label="SmartKids" />
+           
+            <activity 
+            android:name=".Rock"
+            android:label="SmartKids" />
+            
+             <activity 
+            android:name=".Twinkle"
+            android:label="SmartKids" />
+             
+              <activity 
+            android:name=".Willie"
+            android:label="SmartKids" />
+          
+    </application>
+
+</manifest>
