@@ -63,6 +63,16 @@ public void onGesturePerformed(GestureOverlayView view, Gesture gesture) {
  if(prediction.size() > 0){
   String action = prediction.get(0).name;
   
+  try{
+  boolean result = action.matches("[a-zA-Z]");
+  
+  if(result){
+	  setContentView(getResources().getIdentifier(action.toLowerCase(), "layout",getPackageName()));
+	  mp=MediaPlayer.create(List.this, getResources().getIdentifier(action.toLowerCase(), "raw",getPackageName()));
+		mp.start();
+  }
+ 
+  /*
 	if ("a".equals(action) || "A".equals(action))
   {setContentView(R.layout.a);
   mp=MediaPlayer.create(List.this, R.raw.a);
@@ -220,6 +230,9 @@ public void onGesturePerformed(GestureOverlayView view, Gesture gesture) {
 		mp=MediaPlayer.create(List.this, R.raw.z);
 		mp.start();
 	}
+	
+	*/
+  
 	button1=(Button)findViewById(R.id.button1);
 	button1.setOnClickListener(new Button.OnClickListener()
 	{
@@ -230,6 +243,11 @@ public void onGesturePerformed(GestureOverlayView view, Gesture gesture) {
 		}
 	}
 	);
+  }
+  catch(Exception e){
+	  setContentView(R.layout.gesture);
+		 repeat();
+ }
  }
  
 }};
